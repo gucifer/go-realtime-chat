@@ -1,4 +1,4 @@
-# Go Chat
+# Real Time Chat
 
 This is a simple chat web app written in Go Language.
 
