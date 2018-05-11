@@ -1,6 +1,6 @@
 # Go Chat
 
-This is a simple chat web app written in Go
+This is a simple chat web app written in Go Language.
 
 Just run the following
 
