@@ -2,12 +2,12 @@ new Vue({
     el: '#app',
 
     data: {
-        ws: null, // Our websocket
-        newMsg: '', // Holds new messages to be sent to the server
-        chatContent: '', // A running list of chat messages displayed on the screen
-        email: null, // Email address used for grabbing an avatar
-        username: null, // Our username
-        joined: false // True if email and username have been filled in
+        ws: null, 
+        newMsg: '',
+        chatContent: '',
+        email: null, 
+        username: null,
+        joined: false 
     },
 
     created: function() {
@@ -19,10 +19,10 @@ new Vue({
                     + '<img src="' + self.gravatarURL(msg.email) + '">' // Avatar
                     + msg.username
                 + '</div>'
-                + emojione.toImage(msg.message) + '<br/>'; // Parse emojis
+                + emojione.toImage(msg.message) + '<br/>'; 
 
             var element = document.getElementById('chat-messages');
-            element.scrollTop = element.scrollHeight; // Auto scroll to the bottom
+            element.scrollTop = element.scrollHeight; 
         });
     },
 
@@ -33,7 +33,7 @@ new Vue({
                     JSON.stringify({
                         email: this.email,
                         username: this.username,
-                        message: $('<p>').html(this.newMsg).text() // Strip out html
+                        message: $('<p>').html(this.newMsg).text() 
                     }
                 ));
                 this.newMsg = ''; // Reset newMsg
