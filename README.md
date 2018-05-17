@@ -5,7 +5,6 @@ This is a simple chat web app written in Go Language.
 Just run the following
 
 ```
-cd ./src
 go get github.com/gorilla/websocket
 go run main.go
 ```
